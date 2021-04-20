@@ -83,7 +83,7 @@
     flex-direction: column;
     background: #FAFAFA;
     border-radius: 15px;
-    padding: 1em;
+    padding: 1em 4em;
     overflow: auto;
   }
 
