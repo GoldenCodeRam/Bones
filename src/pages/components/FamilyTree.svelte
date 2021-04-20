@@ -35,7 +35,7 @@
                       <div class="branch lv3">
                         {#each thirdLevel as { name }}
                           <div class={thirdLevel.length > 1 ? "entry" : "entry sole"}>
-                            <span class="label">{name}</span>
+                            <span class="label final">{name}</span>
                           </div>
                         {/each}
                       </div>
@@ -81,9 +81,9 @@
   .container {
     display: flex;
     flex-direction: column;
-    background: #FAFAFA;
+    background: #d6d6d6;
     border-radius: 15px;
-    padding: 1em 4em;
+    padding: 0 4em;
     overflow: auto;
   }
 
@@ -99,11 +99,11 @@
     &:before {
       content: "";
       width: $horizontal-gutter / 2;
-      border-top: 2px solid $white;
+      border-top: 2px solid #b3b3b3;
       position: absolute;
       left: -$horizontal-gutter;
       top: 50%;
-      margin-top: 1px;
+      margin-top: 2px;
     }
   }
 
@@ -112,15 +112,15 @@
     min-height: $entry-min-height;
     &:before {
       content: "";
-      height: 100%;
-      border-left: 2px solid $white;
+      height: 101%;
+      border-left: 2px solid #b3b3b3;
       position: absolute;
       left: -($horizontal-gutter / 2);
     }
     &:after {
       content: "";
       width: $horizontal-gutter / 2;
-      border-top: 2px solid $white;
+      border-top: 2px solid #b3b3b3;
       position: absolute;
       left: -($horizontal-gutter / 2);
       top: 50%;
@@ -148,7 +148,7 @@
       &:after {
         height: $border-radius;
         border-top: none;
-        border-bottom: 2px solid $white;
+        border-bottom: 2px solid #b3b3b3;
         border-radius: 0 0 0 $border-radius;
         margin-top: -$border-radius + 1px;
       }
@@ -183,7 +183,7 @@
     box-shadow: 0px 2px 0px #b3b3b3;
 
     &:hover {
-      background: #f3f3f3;
+      background: #dfdfdf;
     }
     &:active {
       transform: translateY(2px);
